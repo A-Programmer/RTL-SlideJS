@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>RTL SlideJS</title>
+		<link type="text/css" rel="stylesheet" href="css/slideshow.css"/>
+
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+
+	</head>
+
+	<body style="direction:rtl;">
+		<div id="slides">
+			<img src="http://placehold.it/940x300">
+			<img src="http://placehold.it/940x300">
+			<img src="http://placehold.it/940x300">
+			<img src="http://placehold.it/940x300">
+			<img src="http://placehold.it/940x300">
+			<a href="#" class="slidesjs-previous slidesjs-navigation">left</a>
+			<a href="#" class="slidesjs-next slidesjs-navigation">right</i></a>
+		</div>
+		<div style="clear:both;"></div>
+		<script>
+			$(document).ready(function(){
+				$(function(){
+				  $("#slides").slidesjs({
+					width: 940,
+					height: 300,
+					navigation: false
+				  });
+				});
+			});
+		</script>
+	</body>
+</html>
